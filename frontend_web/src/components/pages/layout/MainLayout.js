@@ -8,7 +8,7 @@ class MainLayout extends Component {
             <IconContext.Provider value={{ className: 'react-icons', size:"1.0rem" }}>
                 <header className="app-bg-primary sticky-top main-nav">
                     <nav className="container text-light navbar navbar-dark navbar-expand-md">
-                        <a href="#" className="navbar-brand">BULK PAYMENT</a>
+                        <a href="#" className="navbar-brand">Twiga - ExpoDocs</a>
                         <button
                             className="navbar-toggler"
                             data-toggle="collapse"
