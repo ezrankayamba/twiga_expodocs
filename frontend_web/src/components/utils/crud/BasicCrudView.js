@@ -1,5 +1,5 @@
 import React from 'react';
-import {SimpleDialog} from "./SimpleDialog";
+import {SimpleDialog} from "../SimpleDialog";
 import CrudTable from "./CrudTable";
 
 class BasicCrudView extends React.Component {

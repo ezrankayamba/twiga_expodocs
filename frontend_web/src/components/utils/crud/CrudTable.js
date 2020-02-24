@@ -1,9 +1,9 @@
 import React from 'react';
 import Pagination from "./Pagination";
-import LoadingIndicator from "./LoadingIndicator";
-import CommonForm from "./CommonForm";
-import CloseableModel from "../modal/ClosableModal";
-import {IconPlus} from "./Incons";
+import LoadingIndicator from "../LoadingIndicator";
+import CommonForm from "../CommonForm";
+import CloseableModel from "../../modal/ClosableModal";
+import {IconPlus} from "../Incons";
 
 class CrudTable extends React.Component {
     constructor(props) {

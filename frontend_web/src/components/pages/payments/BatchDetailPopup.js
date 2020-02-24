@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Modal from "../../modal/Modal";
-import CrudTable from "../../utils/CrudTable";
+import CrudTable from "../../utils/crud/CrudTable";
 
 class BatchDetailPopup extends Component {
     constructor(props) {

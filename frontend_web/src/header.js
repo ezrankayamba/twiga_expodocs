@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import getMenus from "./components/menus";
 import {logout} from "./redux/auth/actions";
 import {connect} from "react-redux";
+import {Users} from "./_helpers/Users";
 
 @connect((state) => {
     return {
@@ -13,8 +14,7 @@ import {connect} from "react-redux";
 class Header extends Component {
     render() {
         let {loggedIn, user} = this.props
-
-        let privileges = loggedIn && user && user.profile ? user.profile.role.privileges : []
+        let privileges = Users.getPrivileges(user)
         return (
             <>
                 {getMenus(loggedIn, privileges).map((item) => {

@@ -8,7 +8,7 @@ import {
     updateClient
 } from "../../../_services/ClientsService";
 import {connect} from "react-redux";
-import BasicCrudView from "../../utils/BasicCrudView";
+import BasicCrudView from "../../utils/crud/BasicCrudView";
 import CommonForm from "../../utils/CommonForm";
 import CloseableModel from "../../modal/ClosableModal";
 import LoadingIndicator from "../../utils/LoadingIndicator";

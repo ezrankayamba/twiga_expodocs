@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {connect} from "react-redux";
-import {File} from "../utils/file/File";
 
 @connect((state) => {
     return {
@@ -28,7 +27,7 @@ class HomePage extends Component {
         return (
             <div className="pt-3 row">
                 <div className="col">
-                    <img src="../../../static/images/bulk-pay.jpg" className="img-fluid"/>
+                    <h6>Dashboard here ...</h6>
                 </div>
             </div>
         );

@@ -7,7 +7,7 @@ import {
     deleteSelectedBatches,
     fetchBatches
 } from "../../../_services/PaymentsService";
-import BasicCrudView from "../../utils/BasicCrudView";
+import BasicCrudView from "../../utils/crud/BasicCrudView";
 import ManualEntryForm from "./ManualEntryForm";
 import FileUploadForm from "./FileUploadForm";
 import BatchDetailPopup from "./BatchDetailPopup";
