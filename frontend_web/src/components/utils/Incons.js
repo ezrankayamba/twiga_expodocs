@@ -10,7 +10,8 @@ import {
     MdPayment,
     MdDomain,
     MdLock,
-    MdLockOpen
+    MdLockOpen,
+    MdFileUpload
 } from "react-icons/md";
 
 export const IconPlus = () => <MdPlaylistAdd/>
@@ -24,3 +25,4 @@ export const IconPayment = () => <MdPayment/>
 export const IconClient = () => <MdDomain/>
 export const IconSignOut = () => <MdLock/>
 export const IconSignIn = () => <MdLockOpen/>
+export const IconFileUpload = () => <MdFileUpload/>

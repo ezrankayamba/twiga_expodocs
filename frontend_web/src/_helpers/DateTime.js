@@ -1,5 +1,5 @@
 import dayjs from "dayjs";
 
 export const DateTime = {
-    fmt: (str) => dayjs(str).format("DD/MM/YYYY HH:mm")
+    fmt: (str, fmt = "DD/MM/YYYY HH:mm") => dayjs(str).format(fmt)
 }

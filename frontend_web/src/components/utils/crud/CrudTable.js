@@ -32,24 +32,27 @@ class CrudTable extends React.Component {
                 {newRecord &&
                 <button className="btn btn-sm btn-default float-right" onClick={newRecord.show}><IconPlus/>
                 </button>}
-                <table className="table table-sm table-hover table-bordered">
-                    <thead className="border-none">
-                    <tr className="border-none">
-                        {columns.map(col =>
-                            <th key={col.field}>{col.title}</th>
-                        )}
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {data.map(row => <tr onClick={onRowClick ? (e) => onRowClick(e, row) : null}
-                                         key={row.id}
-                                         className="border-none">
-                        {columns.map(col => (
-                            <td className="p-1" key={col.field}>{col.render ? col.render(row) : row[col.field]}</td>
-                        ))}
-                    </tr>)}
-                    </tbody>
-                </table>
+                <div className="table-responsive small">
+                    <table className="table table-sm table-hover table-bordered">
+                        <thead className="border-none">
+                        <tr className="border-none">
+                            {columns.map(col =>
+                                <th className="text-nowrap" key={col.field}>{col.title}</th>
+                            )}
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {data.map(row => <tr onClick={onRowClick ? (e) => onRowClick(e, row) : null}
+                                             key={row.id}
+                                             className="border-none">
+                            {columns.map(col => (
+                                <td className="p-1" key={col.field}>{col.render ? col.render(row) : row[col.field]}</td>
+                            ))}
+                        </tr>)}
+                        </tbody>
+                    </table>
+                </div>
+
                 <LoadingIndicator isLoading={isLoading}/>
                 {pages > 1 && <Pagination pageNo={pageNo} pages={pages} onPageChange={onPageChange}/>}
                 {newRecord && <CloseableModel modalId="manageRecord" handleClose={newRecord.hide} show={newRecord.open}

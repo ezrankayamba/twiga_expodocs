@@ -6,7 +6,7 @@ class Pagination extends Component {
         const {pageNo, pages, onPageChange} = this.props
         let pList = []
         let from = pageNo - 2 > 1 ? pageNo - 2 : 1
-        let to = from + 5 < pages ? from + 5 : pages
+        let to = from + 4 < pages ? from + 4 : pages
         for (let i = from; i <= to; i++) {
             pList.push(i)
         }

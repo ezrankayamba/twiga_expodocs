@@ -1,9 +1,14 @@
 .my-custom-file {
 
 }
+.my-input {
+   border: 1px solid #e1e1e1;
+}
 .my-custom-file .d-flex input{
    outline: none;
    box-shadow: none !important;
+   border: none;
+   border-right: 1px solid #e1e1e1;
 }
 .my-custom-file .d-flex button{
    margin-left: -2px;

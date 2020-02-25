@@ -1,10 +1,9 @@
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/auth/LoginPage";
 import LogoutPage from "./pages/auth/LogoutPage";
-import ClientsIndexPage from "./pages/clients/ClientsIndexPage";
-import PaymentsIndexPage from "./pages/payments/PaymentsIndexPage";
 import React from "react";
-import {IconClient, IconHome, IconPayment, IconSignIn, IconSignOut} from "./utils/Incons";
+import {IconHome, IconPayment, IconSignIn, IconSignOut} from "./utils/Incons";
+import SalesIndexPage from "./pages/sales/SalesIndexPage";
 
 const getMenus = (loggedIn, privileges) => {
     let pFilter = (m) => {
@@ -14,20 +13,12 @@ const getMenus = (loggedIn, privileges) => {
         [
             {id: 1, path: "/home", name: "Home", component: HomePage, Icon: () => <IconHome/>, privilege: 'Anonymous'},
             {
-                id: 2,
-                path: "/clients",
-                name: "Clients",
-                component: ClientsIndexPage,
-                Icon: () => <IconClient/>,
-                privilege: 'BackOffice.viewClients'
-            },
-            {
                 id: 3,
-                path: "/payments",
-                name: "Payments",
-                component: PaymentsIndexPage,
+                path: "/sales",
+                name: "Sales",
+                component: SalesIndexPage,
                 Icon: () => <IconPayment/>,
-                privilege: 'Payments.viewPayments'
+                privilege: 'Sales.manage'
             },
             {
                 id: 4,
